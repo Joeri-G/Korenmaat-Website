@@ -1,0 +1,9 @@
+footer {
+  background: var(--palette-prim);
+  color: var(--palette-sec);
+  padding: 1em;
+  width: 100%;
+  text-align: center;
+  display: block;
+  bottom: 0;
+}

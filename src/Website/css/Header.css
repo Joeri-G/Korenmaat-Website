@@ -1,0 +1,105 @@
+.header {
+  height: 100vh;
+  background-image: url(../img/home-header.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+
+.headerCard {
+  color: var(--palette-sec);
+  font-weight: 600;
+  background: rgba(0, 0, 0, 0.75);
+  border-radius: 1.5rem;
+  margin: auto;
+  padding: 2rem;
+  margin-top: 12rem;
+}
+
+.toWebshop {
+  margin-left: 6rem;
+}
+
+.headerCard h1 {
+  font-size: 2.5rem;
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+.headerCard p {
+  font-size: 1.45rem;
+  margin: 0;
+  font-weight: normal;
+  color: var(--palette-quat);
+}
+
+.headerCard button {
+  margin-left: 1rem;
+  display: inline-flex;
+  font-weight: inherit;
+  background: var(--palette-prim);
+  color: inherit;
+  padding: 1rem;
+  border: 0;
+  border-radius: 24px;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.headerCard button:first-of-type {
+  margin-left: 0;
+}
+
+.headerCard button:hover,
+.headerCard button:focus {
+  background: var(--palette-tert);
+}
+
+.toWebshop button {
+  margin-top: 1.5rem;
+  margin-right: 0.15rem;
+}
+
+.toWebshop button::after {
+  content: '';
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 0.25rem;
+  border-style: solid;
+  border-color: var(--palette-sec);
+  border-bottom: 1rem;
+  border-left: 1rem;
+
+  height: 1ch;
+  width: 1ch;
+
+  transform: rotate(45deg);
+}
+
+.toWebshop button:hover::after,
+.toWebshop button:focus::after {
+  margin-left: 0.4rem;
+}
+
+.toWebshop button:hover,
+.toWebshop button:focus {
+  margin-right: 0;
+}
+
+.moreInformation {
+  margin-right: 6rem;
+}
+
+.moreInformation img {
+  height: 1rem;
+  display: block;
+  margin: 0 auto;
+}
+
+.moreInformation a:hover,
+.moreInformation a:focus {
+  text-decoration: none;
+}

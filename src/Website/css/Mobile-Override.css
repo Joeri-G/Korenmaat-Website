@@ -1,0 +1,20 @@
+@media screen and (orientation:portrait) { /* if portrait mode (like on mobile) */
+  .toWebshop {
+    margin: auto;
+    margin-top: 8rem;
+  }
+
+  .headerCard button {
+    width: 100%;
+    margin: 1rem 0 0;
+    display: block;
+  }
+
+  .mainCol1Mobile {
+    grid-template-columns: 1fr;
+  }
+
+  .navbarTitle, .navbarTitleRight {
+    display: none;
+  }
+}

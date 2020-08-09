@@ -1,0 +1,31 @@
+@keyframes downFromTop {
+  from {
+    top: -5rem;
+  }
+  to {
+    top: 0;
+  }
+}
+
+@keyframes upToTop {
+  from {
+    top: 0;
+  }
+  to {
+    top: -5rem;
+  }
+}
+
+.downFromTopAnimation {
+  animation-name: downFromTop;
+  animation-duration: 0.7s;
+}
+
+.upToTopAnimation {
+  animation-name: upToTop;
+  animation-duration: 0.7s;
+}
+
+.waitUpTop {
+  top: -5rem;
+}
