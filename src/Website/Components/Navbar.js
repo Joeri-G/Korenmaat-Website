@@ -74,7 +74,7 @@ export default class Navbar extends Component {
           </div>
           <div className="navbarContent">
             <span className="navbarTitleRight">
-              Biologische (Web-)Winkel Met Bezorg Service
+              Biologische (Web) Winkel Met Bezorg Service
             </span>
           </div>
         </nav>
