@@ -44,7 +44,7 @@ export default class Main extends Component {
         </div> */}
         {(MAPS_API_KEY !== "") ? <iframe
           className="mainGoogleMapsEmbed"
-          id="korenmaatLocationMapsEmbed"
+          title="korenmaatLocationMapsEmbed"
           frameBorder="0"
           src={`https://www.google.com/maps/embed/v1/place?key=${MAPS_API_KEY}&q=${MAPS_API_LOCATION}&zoom=15`} allowFullScreen
         /> : null}
