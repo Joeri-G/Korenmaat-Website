@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 
 const LOREM = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+const MAPS_API_KEY = "AIzaSyBZ8VVIjhSivf5CkGOVyCetgZ0pPsDgwDM";
+const MAPS_API_LOCATION = "De+Korenmaat+Zeist";
 
 export default class Main extends Component {
   render() {
@@ -36,6 +38,16 @@ export default class Main extends Component {
             <CustomButton text="Naar De Webshop" link="https://dekorenmaat.nl/webshop" />
           </div>
         </div>
+        {/* <div className="mainContactInformation" id="contact">
+          <h1>Contact</h1>
+          <p>{LOREM}</p>
+        </div> */}
+        {(MAPS_API_KEY !== "") ? <iframe
+          className="mainGoogleMapsEmbed"
+          id="korenmaatLocationMapsEmbed"
+          frameBorder="0"
+          src={`https://www.google.com/maps/embed/v1/place?key=${MAPS_API_KEY}&q=${MAPS_API_LOCATION}&zoom=15`} allowFullScreen
+        /> : null}
       </main>
     );
   }
