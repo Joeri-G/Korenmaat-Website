@@ -45,7 +45,11 @@ export default class Main extends Component {
           className="mainGoogleMapsEmbed"
           title="korenmaatLocationMapsEmbed"
           frameBorder="0"
+<<<<<<< HEAD
           src={`https://www.google.com/maps/embed/v1/place?key=${API_Data.MAPS_API_KEY}&q=${API_Data.MAPS_API_LOCATION}&zoom=15`} allowFullScreen
+=======
+          src={`https://www.google.com/maps/embed/v1/place?key=${MAPS_API_KEY}&q=${MAPS_API_LOCATION}&zoom=15`} allowFullScreen
+>>>>>>> 514d89f7355b4249c92e3f5f7c1ea34f183946ce
         /> : null}
       </main>
     );
