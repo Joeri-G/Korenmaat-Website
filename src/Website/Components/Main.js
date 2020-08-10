@@ -34,7 +34,7 @@ export default class Main extends Component {
             <h1>Waar</h1>
             {/* <h2>Is De Korenmaat</h2> */}
             <p>Lalalalala Zeist, lalalala Postcodecheck {LOREM} {LOREM}</p>
-            <CustomButton text="Naar De Webshop" link="https://dekorenmaat.nl/webshop" />
+            <CustomButton text="Doe De Postcodecheck" link="https://dekorenmaat.nl/webshop" />
           </div>
         </div>
         {/* <div className="mainContactInformation" id="contact">

@@ -68,14 +68,17 @@ export default class Navbar extends Component {
       <React.Fragment>
          {/*"downFromTopAnimation navbar"*/}
         <nav className={`${this.state.extraCSSclasses}navbar`}>
-          <div className="navbarLogo">
+          <div className="navBarLogoLeft">
             <img src={KorenmaatLogo} alt="Logo" />
-            <span className="navbarTitle">De Korenmaat</span>
           </div>
           <div className="navbarContent">
+            <span className="navbarTitle">De Korenmaat</span>
+          </div>
+          <div className="navbarLogoRight">
             <span className="navbarTitleRight">
               Biologische (Web) Winkel Met Bezorg Service
             </span>
+            <img src={KorenmaatLogo} alt="Logo" />
           </div>
         </nav>
       </React.Fragment>

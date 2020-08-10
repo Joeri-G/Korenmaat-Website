@@ -14,7 +14,11 @@
     grid-template-columns: 1fr;
   }
 
-  .navbarTitle, .navbarTitleRight {
+  .navbarTitle, .navbarTitleRight, .navbarLogoRight {
     display: none;
+  }
+
+  .navBarLogoLeft {
+    display: flex;
   }
 }
