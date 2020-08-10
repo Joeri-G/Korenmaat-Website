@@ -73,7 +73,7 @@ export default class Navbar extends Component {
         </div>
         <div className="navbarLogoRight">
           <span className="navbarTitleRight">
-            Biologische (Web) Winkel Met Bezorg Service
+            Biologische (web) winkel met bezorg service
           </span>
           <img src={KorenmaatLogo} alt="Logo" />
         </div>
