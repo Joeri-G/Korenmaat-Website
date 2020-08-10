@@ -103,3 +103,9 @@
 .moreInformation a:focus {
   text-decoration: none;
 }
+
+.webshop_lies {
+  font-size: 0.9rem!important;
+  margin-top: 1.25rem!important;
+  text-align: center;
+}

@@ -14,6 +14,7 @@ export default class Header extends Component {
           <button onClick={() => {
             window.location.href = "/webshop"
           }}>Naar De Webshop</button>
+          <p className="webshop_lies">De Webshop Wordt Binnenkort Gerenoveerd!</p>
         </div>
       </header>
     );
