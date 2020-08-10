@@ -14,7 +14,7 @@ export default class Website extends Component {
     return (
       <React.Fragment>
         <Navbar/>
-        <Header />
+        <Header/>
         <Main/>
         <Footer/>
       </React.Fragment>
