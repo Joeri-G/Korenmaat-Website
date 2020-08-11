@@ -1,13 +1,18 @@
-@media screen and ((orientation:portrait) or (height > 100vw)) { /* if portrait mode (like on mobile) */
+@media screen and (orientation:portrait) /*or (height > 100vw)*/ { /* if portrait mode (like on mobile) */
   .toWebshop {
     margin: auto;
     margin-top: 8rem;
   }
 
-  .headerCard button {
+  .headerCard {
+    max-width: 90%;
+  }
+
+  .headerCard .button {
     width: 100%;
     margin: 1rem 0 0;
     display: block;
+    text-align: center;
   }
 
   .mainCol1Mobile {
