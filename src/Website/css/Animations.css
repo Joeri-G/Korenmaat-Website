@@ -16,6 +16,24 @@
   }
 }
 
+@keyframes ZoomIn {
+  from {
+    transform: scale(0);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+@keyframes ZoomOut {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(0);
+  }
+}
+
 .downFromTopAnimation {
   animation-name: downFromTop;
   animation-duration: 0.7s;
@@ -28,4 +46,14 @@
 
 .waitUpTop {
   top: -5rem;
+}
+
+.ZoomInAnimation {
+  animation-name: ZoomIn;
+  animation-duration: 0.15s;
+}
+
+.ZoomOutAnimation {
+  animation-name: ZoomOut;
+  animation-duration: 0.15s;
 }

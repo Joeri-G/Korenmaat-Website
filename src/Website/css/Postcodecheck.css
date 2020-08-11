@@ -1,0 +1,43 @@
+.PostcodecheckBackground {
+  position: fixed;
+  z-index: 4;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgb(0,0,0);
+  background-color: rgba(0,0,0,0.4);
+}
+
+.Postcodecheck {
+  border-radius: 24px;
+  z-index: 6;
+  position: fixed;
+  top: 0;
+  left: 30%;
+  background-color: #fefefe;
+  margin: 6% auto;
+  padding: 20px;
+  border: 1px solid #888;
+  width: 40%;
+}
+
+.Postcodecheck a {
+  text-decoration: underline;
+}
+
+.Postcodecheck h1 {
+  font-size: 2rem;
+  font-weight: normal;
+}
+
+.Postcodecheck input {
+  display: block;
+  width: 100%;
+  border: none;
+  padding: 1rem;
+  -webkit-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.6);
+  -moz-box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.6);
+  box-shadow: 0px 0px 4px 1px rgba(0,0,0,0.6);
+}
