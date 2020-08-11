@@ -55,6 +55,7 @@
 
 .headerCard .button:hover,
 .headerCard .button:focus {
+  text-decoration: none;
   background: var(--palette-tert);
 }
 

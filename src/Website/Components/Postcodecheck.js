@@ -23,12 +23,16 @@ export default class Postcodecheck extends Component {
       postcodeRanges: [
         {
           min: 3432,
+          max: 3432
+        },
+        {
+          min: 4100,
           max: 4112
         }
       ],
       hasFeedbackMessage: false,
       feedbackMessage: "",
-      successa: false,
+      success: false,
       openModal: true,
       finishedAnimation: false
     };
@@ -95,11 +99,15 @@ export default class Postcodecheck extends Component {
   }
 
   render() {
+    let postcodeStatus = null;
+    if (this.state.hasFeedbackMessage && this.state.success) postcodeStatus = "validPostcode";
+    if (this.state.hasFeedbackMessage && !this.state.success) postcodeStatus = "invalidPostcode";
+
     return (
       <React.Fragment>
         <div className={(this.state.openModal) ? "Postcodecheck ZoomInAnimation" : "Postcodecheck ZoomOutAnimation"}>
           <h1>Postcodecheck</h1>
-          <input placeholder="Uw Postcode (1234AB)" onChange={this.checkNieuwePostcode}/>
+          <input placeholder="Uw Postcode (1234AB)" onChange={this.checkNieuwePostcode} className={postcodeStatus}/>
           {(this.state.hasFeedbackMessage) ? this.state.feedbackMessage : null}
         </div>
         <div className="PostcodecheckBackground" onClick={this.zoomOutAnimation}/>
