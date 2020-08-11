@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-// import DownArrow from '../img/down-arrow.svg';
+import CustomButton from './CustomButton';
 
 export default class Header extends Component {
   render() {
@@ -8,12 +8,8 @@ export default class Header extends Component {
         <div className="headerCard toWebshop">
           <h1>De Korenmaat</h1>
           <p>Lekker Biologisch<br/>Lekker Eigenwijs!</p>
-          <button onClick={() => {
-            window.location.href = "#info"
-          }}>Meer Informatie</button>
-          <button onClick={() => {
-            window.location.href = "/webshop"
-          }}>Naar De Webshop</button>
+          <CustomButton text="Meer Informatie" link="#info" />
+          <CustomButton text="Naar De Webshop" link="/webshop" />
           <p className="webshop_lies">De Webshop Wordt Binnenkort Gerenoveerd!</p>
         </div>
       </header>

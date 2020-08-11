@@ -53,11 +53,17 @@
   width: 100%;
 }
 
+.mainButtonContainer {
+  width: calc(100% - 2rem);
+  display: block;
+  margin: 0 auto;
+}
+
 .main button {
   font-weight: bold;
-  width: calc(100% - 2rem);
   color: #fff;
   display: inline-flex;
+  width: 100%;
   background: var(--palette-prim);
   padding: 1rem;
   border: 0;
