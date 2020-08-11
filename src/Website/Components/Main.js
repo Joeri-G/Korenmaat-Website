@@ -29,7 +29,7 @@ export default class Main extends Component {
             <div className="mainColumn">
               <h1>Wie</h1>
               {/* <h2>Zijn De Korenmaat</h2> */}
-              <p>Daar waar andere biologische winkels ophouden, gaat de Korenmaat verder.
+              {/* <p>Daar waar andere biologische winkels ophouden, gaat de Korenmaat verder.
                 De Korenmaat is niet alleen een hele goede biowebwinkel, maar vooral ook een maatschappijvernieuwend initiatief.
                 Wij geloven dat we met elkaar het economisch leven een ander gezicht kunnen geven.
                 De Korenmaat probeert in de praktijk van alledag te laten zien, dat verantwoordelijkheid en zorg voor elkaar de thema's zouden moeten zijn die centraal staan.
@@ -37,7 +37,8 @@ export default class Main extends Component {
                 In onze samenleving wil de Korenmaat op microniveau een kweekvijver zijn voor het ontwikkelen van een nieuwe vorm van economie.
                 In samenwerkingsverbanden, tussen klanten, winkeliers en producenten, op weg naar een wereld waarin productie en consumptie met elkaar in evenwicht zijn.
                 Vanuit het besef dat met en voor elkaar werken meer welvaart en welzijn oplevert dan opereren vanuit egoïsme.
-                Doet u mee?</p>
+                Doet u mee?</p> */}
+                <p>{LOREM}</p>
                 <div className="mainButtonContainer">
                   <CustomButton text="Bekijk De Video" link="https://youtu.be/jOlPtxCKVKo" />
                 </div>
@@ -45,7 +46,8 @@ export default class Main extends Component {
             <div className="mainColumn">
               <h1>Wat</h1>
               {/* <h2>Doet De Korenmaat</h2> */}
-              <p>{LOREM} {LOREM}</p>
+              {/* <p>{LOREM} {LOREM}</p> */}
+              <p>{LOREM}</p>
               <div className="mainButtonContainer">
                 <CustomButton text="Ons Assortiment" link="https://dekorenmaat.nl/webshop" />
               </div>
@@ -53,7 +55,8 @@ export default class Main extends Component {
             <div className="mainColumn">
               <h1>Waar</h1>
               {/* <h2>Is De Korenmaat</h2> */}
-              <p>Lalalalala Zeist, lalalala Postcodecheck {LOREM} {LOREM}</p>
+              {/* <p>Lalalalala Zeist, lalalala Postcodecheck {LOREM} {LOREM}</p> */}
+              <p>{LOREM}</p>
               <div className="mainButtonContainer">
                 <CustomButton text="Doe De Postcodecheck" onClickCallback={this.updatePostcodeDisplay} />
               </div>
