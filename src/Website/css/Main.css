@@ -65,7 +65,7 @@
   margin: 0 auto;
 }
 
-.main button, .main .button {
+.main .button {
   font-weight: bold;
   color: #fff;
   display: inline-flex;
@@ -79,8 +79,9 @@
   cursor: pointer;
 }
 
-.main button:hover,
-.main button:focus {
+.main .button:hover,
+.main .button:focus {
+  text-decoration: none;
   background: var(--palette-tert);
 }
 

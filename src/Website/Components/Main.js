@@ -69,7 +69,7 @@ export default class Main extends Component {
             frameBorder="0"
             src={`https://www.google.com/maps/embed/v1/place?key=${API_Data.MAPS_API_KEY}&q=${API_Data.MAPS_API_LOCATION}&zoom=15`} allowFullScreen
           /> : null}
-        </main>`
+        </main>
       </React.Fragment>
     );
   }

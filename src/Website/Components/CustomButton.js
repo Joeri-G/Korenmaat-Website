@@ -2,18 +2,19 @@ import React, { Component } from 'react';
 
 export default class CustomButton extends Component {
   render() {
-    if (typeof this.props.link !== "undefined" && this.props.link !== null) return (
-      <a href={this.props.link}>
-          <button className="toWebshop">
-            {this.props.text}
-          </button>
+    if (typeof this.props.link === "string" && this.props.link !== "") return (
+      <a href={this.props.link} className="button toWebshop">
+          {this.props.text}
       </a>
     );
 
     return (
-      <button className="toWebshop" onClick={this.props.onClickCallback}>
+      <a href="#nowhere" className="toWebshop button" onClick={(e) => {
+        e.preventDefault();
+        this.props.onClickCallback();
+      }}>
         {this.props.text}
-      </button>
+      </a>
     );
   }
 }

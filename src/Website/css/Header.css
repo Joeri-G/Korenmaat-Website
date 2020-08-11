@@ -35,7 +35,7 @@
   color: var(--palette-quat);
 }
 
-.headerCard button {
+.headerCard .button {
   margin-left: 1rem;
   display: inline-flex;
   font-weight: inherit;
@@ -49,21 +49,21 @@
   cursor: pointer;
 }
 
-.headerCard button:first-of-type {
+.headerCard .button:first-of-type {
   margin-left: 0;
 }
 
-.headerCard button:hover,
-.headerCard button:focus {
+.headerCard .button:hover,
+.headerCard .button:focus {
   background: var(--palette-tert);
 }
 
-.toWebshop button {
+.toWebshop .button {
   margin-top: 1.5rem;
   margin-right: 0.15rem;
 }
 
-.toWebshop button::after {
+.toWebshop .button::after {
   content: '';
   display: inline-block;
   box-sizing: border-box;
@@ -79,13 +79,13 @@
   transform: rotate(45deg);
 }
 
-.toWebshop button:hover::after,
-.toWebshop button:focus::after {
+.toWebshop .button:hover::after,
+.toWebshop .button:focus::after {
   margin-left: 0.4rem;
 }
 
-.toWebshop button:hover,
-.toWebshop button:focus {
+.toWebshop .button:hover,
+.toWebshop .button:focus {
   margin-right: 0;
 }
 
