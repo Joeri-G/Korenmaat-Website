@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Postcodes from '../postcodes.json';
 
 /*
 Postcodecheck
@@ -20,16 +21,7 @@ export default class Postcodecheck extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      postcodeRanges: [
-        {
-          min: 3432,
-          max: 3432
-        },
-        {
-          min: 4100,
-          max: 4112
-        }
-      ],
+      postcodeRanges: Postcodes,
       hasFeedbackMessage: false,
       feedbackMessage: "",
       success: false,

@@ -26,4 +26,10 @@
   .navBarLogoLeft {
     display: flex;
   }
+
+  .Postcodecheck {
+    left: 10%;
+    margin: 20% auto;
+    width: 80%;
+  }
 }
