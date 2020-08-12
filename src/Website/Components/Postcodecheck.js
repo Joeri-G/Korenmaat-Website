@@ -3,18 +3,20 @@ import Postcodes from '../postcodes.json';
 
 /*
 Postcodecheck
-Er kunnen verschillende ranges gebruikt worden voor de Postcodecheck
-Deze worden toegevoegd door aan het Postcodecheck array een nieuw object toe te voegen met een min en een max
+De postcode ranges worden opgeslagen in src/Website/postcodes.json.
+Hier kunnen nieuwe ranges aan toe worden gevoegd door een object met een min en een max waarde aan het array toe te voegen
 bv:
-postcodeRanges: [
-  {
-    min: 1000,
-    max: 1050
-  },
-  {
-    min: 2000,
-    max: 2010
-  }
+[
+  {"min": 1000, "max": 1050} <= standaard range
+]
+
+[
+  {"min": 1000, "max": 1020},
+  {"min": 1030, "max": 1050} <= niewe range, nu wordt 1031 t/m 1039 niet meer geaccepteerd
+                                NOTE: let op de commas. Meer informatie over JSON:
+                                https://www.w3schools.com/whatis/whatis_json.asp
+                                https://www.json.org/json-en.html
+]
 */
 
 export default class Postcodecheck extends Component {
