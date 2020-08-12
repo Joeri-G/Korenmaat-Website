@@ -1,4 +1,4 @@
-@media screen and (orientation:portrait) /*or (height > 100vw)*/ { /* if portrait mode (like on mobile) */
+@media screen and (orientation:portrait) { /* if portrait mode (like on mobile) */
   .toWebshop {
     margin: auto;
     margin-top: 8rem;
@@ -28,8 +28,8 @@
   }
 
   .Postcodecheck {
-    left: 10%;
+    left: 7.5%;
     margin: 20% auto;
-    width: 80%;
+    width: 85%;
   }
 }

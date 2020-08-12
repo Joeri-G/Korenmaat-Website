@@ -41,9 +41,7 @@ export default class Postcodecheck extends Component {
   checkNieuwePostcode = (e) => {
     let inputValue = e.target.value;
     if (inputValue.length < 4) return null;
-    let postcodeString = inputValue.slice(0, 4); // if the string is more than 4 chars extract the first few
-    let postcode = Number(postcodeString);
-    if (isNaN(postcode) || postcode === null || inputValue.length > 6) {
+    if (!this.checkPostcodeFormat(inputValue)) {
       this.setState({
         hasFeedbackMessage: true,
         feedbackMessage: <p className="ongeldigePostcode">De opgegeven postcode is ongeldig.</p>,
@@ -51,6 +49,9 @@ export default class Postcodecheck extends Component {
       });
       return null;
     }
+
+    let postcode = Number(inputValue.slice(0, 4));
+
     for (const range of this.state.postcodeRanges) {
       if (postcode >= range.min && postcode <= range.max) {
         this.setState({
@@ -77,6 +78,19 @@ export default class Postcodecheck extends Component {
                         </React.Fragment>,
       success: false
     });
+  }
+
+  checkPostcodeFormat = (postcode) => {
+    if (postcode.length < 4 || postcode.length > 6) return false; // check the length
+    let postcodeNum = Number(postcode.slice(0, 4))
+    if (isNaN(postcodeNum) || postcodeNum === null) return false; // make sure the numbers are valid
+    if (postcode.length === 4) return true; // if the length is 4 its only numbers and its valid
+    if (postcode.length === 5) return false; // if the length is 5 we are missing a letter and its invalid
+    let postcodeLetters = postcode.slice(4, 6);
+    for (const char of postcodeLetters) { // make sure the letters are alphabetical
+      if (!char.match(/[A-z]/i)) return false
+    }
+    return true;
   }
 
   zoomOutAnimation = () => {

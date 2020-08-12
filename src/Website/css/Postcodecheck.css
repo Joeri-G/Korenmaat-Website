@@ -18,7 +18,7 @@
   left: 30%;
   background-color: #fefefe;
   margin: 6% auto;
-  padding: 20px;
+  padding: 2rem;
   border: 1px solid #888;
   width: 40%;
 }
@@ -27,12 +27,19 @@
   text-decoration: underline;
 }
 
+.Postcodecheck p {
+  margin: 0;
+  margin-top: 1rem;
+}
+
 .Postcodecheck h1 {
+  margin: 0;
   font-size: 2rem;
   font-weight: normal;
 }
 
 .Postcodecheck input {
+  margin: 1rem 0 0 0;
   --border-color:  0px 0px 4px 1px rgba(0, 0, 0, 0.6);
   border-radius: 8px;
   display: block;
