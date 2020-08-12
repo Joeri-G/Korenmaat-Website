@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import CustomButton from './CustomButton';
 import Postcodecheck from './Postcodecheck';
-import API_Data from './API_Data';
+import MapsEmbed from './MapsEmbed';
 
 const LOREM = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
 
@@ -66,12 +66,7 @@ export default class Main extends Component {
             <h1>Contact</h1>
             <p>{LOREM}</p>
           </div> */}
-          {(API_Data.MAPS_API_KEY !== "") ? <iframe
-            className="mainGoogleMapsEmbed"
-            title="korenmaatLocationMapsEmbed"
-            frameBorder="0"
-            src={`https://www.google.com/maps/embed/v1/place?key=${API_Data.MAPS_API_KEY}&q=${API_Data.MAPS_API_LOCATION}&zoom=15`} allowFullScreen
-          /> : null}
+          <MapsEmbed />
         </main>
       </React.Fragment>
     );

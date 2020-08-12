@@ -1,5 +1,5 @@
 .main {
-  padding: 0.5rem;
+  padding: 0.5rem 0.5rem;
   padding-top: 5rem;
   display: block;
   width: 100%;
@@ -92,13 +92,4 @@
 .mainContactInformation {
   max-width: 980px;
   margin: 0 auto;
-}
-
-.mainGoogleMapsEmbed {
-  margin-top: 1rem;
-  filter: grayscale(0.4);
-  display: block;
-  width: 100%;
-  height: 24rem;
-  border: none;
 }
