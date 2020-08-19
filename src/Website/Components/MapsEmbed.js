@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import CustomButton from './CustomButton';
-import API_Data from './API_Data';
 
 export default class MapsEmbed extends Component {
   constructor(props) {
@@ -33,12 +32,12 @@ export default class MapsEmbed extends Component {
       className="mainGoogleMapsEmbed"
       title="korenmaatLocationMapsEmbed"
       frameBorder="0"
-      src={`https://www.google.com/maps/embed/v1/place?key=${API_Data.MAPS_API_KEY}&q=${API_Data.MAPS_API_LOCATION}&zoom=15`} allowFullScreen
+      src={`https://www.google.com/maps/embed/v1/place?key=${this.props.MAPS_API_KEY}&q=${this.props.MAPS_API_LOCATION}&zoom=15`} allowFullScreen
     />
 
   render() {
     return (
-      (API_Data.MAPS_API_KEY !== "" && this.state.showGoogleMapsEmbed) ? <this.GoogleMapsEmbed/> : <this.UserHasDNT/>
+      (this.state.showGoogleMapsEmbed) ? <this.GoogleMapsEmbed/> : <this.UserHasDNT/>
     );
   }
 }

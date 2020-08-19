@@ -4,8 +4,7 @@ export default class Footer extends Component {
   render() {
     return (
       <footer>
-        <p>Foto door Maria Lindsey via Pexels</p>
-        <p>&copy; De Korenmaat 2020</p>
+        <p>&copy; <a href="https://www.joerigeuzinge.nl">Joeri Geuzinge</a></p>
       </footer>
     );
   }

@@ -15,9 +15,14 @@
     <title>De Korenmaat</title>
   </head>
   <body>
-    <div id="noJavaScriptWarning" onload="this.style.display = 'none'">
-      JavaScript is required to view this page. You can access the webshop <a href="/webshop">here</a>
+    <div id="noJavaScriptWarning">
+      <p>Either the page is loading or you have javascript disabled. If the latter is the case the webshop can be accessed <a href="/webshop">here</a></p>
     </div>
     <div id="KorenmaatHomePage"></div>
   </body>
+  <script type="text/javascript">
+    window.addEventListener('load', (event) => {
+      document.getElementById("noJavaScriptWarning").style.display = "none";
+    });
+  </script>
 </html>

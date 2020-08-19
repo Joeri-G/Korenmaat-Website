@@ -2,8 +2,7 @@ import React, { Component } from 'react';
 import CustomButton from './CustomButton';
 import Postcodecheck from './Postcodecheck';
 import MapsEmbed from './MapsEmbed';
-
-const LOREM = "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
+import API_Data from './API_Data';
 
 export default class Main extends Component {
   constructor(props) {
@@ -28,45 +27,27 @@ export default class Main extends Component {
           <div className="mainColumns mainCol3 mainCol1Mobile">
             <div className="mainColumn">
               <h1>Wie</h1>
-              {/* <h2>Zijn De Korenmaat</h2> */}
-              {/* <p>Daar waar andere biologische winkels ophouden, gaat de Korenmaat verder.
-                De Korenmaat is niet alleen een hele goede biowebwinkel, maar vooral ook een maatschappijvernieuwend initiatief.
-                Wij geloven dat we met elkaar het economisch leven een ander gezicht kunnen geven.
-                De Korenmaat probeert in de praktijk van alledag te laten zien, dat verantwoordelijkheid en zorg voor elkaar de thema's zouden moeten zijn die centraal staan.
-                Wij stellen kritische vragen over de buitensporige rol die het geld in onze samenleving heeft gekregen en kiezen daarom voor een winkel die niet is gebaseerd is op winstmaximalisatie, persoonlijk winstbejag en alle oneigenlijke motieven die daarbij een rol kunnen spelen.
-                In onze samenleving wil de Korenmaat op microniveau een kweekvijver zijn voor het ontwikkelen van een nieuwe vorm van economie.
-                In samenwerkingsverbanden, tussen klanten, winkeliers en producenten, op weg naar een wereld waarin productie en consumptie met elkaar in evenwicht zijn.
-                Vanuit het besef dat met en voor elkaar werken meer welvaart en welzijn oplevert dan opereren vanuit egoïsme.
-                Doet u mee?</p> */}
-                <p>{LOREM}</p>
+              <p>De Korenmaat is een van de eerste biologische webwinkels van Nederland. Maar dan net even anders. De Korenmaat werd al in de jaren 70 opgericht door een groep mensen die vanuit het antroposofische gedachtengoed een ander soort biologische winkel wilden starten. Werken met oog voor mens en natuur. Voor een eerlijker economisch systeem, wordt een uniek betaalsysteem gebruikt.</p>
                 <div className="mainButtonContainer">
                   <CustomButton text="Bekijk De Video" link="https://youtu.be/jOlPtxCKVKo" />
                 </div>
             </div>
             <div className="mainColumn">
               <h1>Wat</h1>
-              {/* <h2>Doet De Korenmaat</h2> */}
-              {/* <p>{LOREM} {LOREM}</p> */}
-              <p>{LOREM}</p>
+              <p>Wij verkopen biologische groente en fruit uit de buurt. Maar ook andere natuurlijke producten die je bij een biologische supermarkt vindt. Wij halen zoveel mogelijk producten van telers op minder dan 12 kilometer afstand. En als het uit de Noordoostpolder of de Betuwe komt, dan zorgen we ervoor dat we de boer kennen.</p>
               <div className="mainButtonContainer">
                 <CustomButton text="Ons Assortiment" link="https://dekorenmaat.nl/webshop" />
               </div>
             </div>
             <div className="mainColumn">
               <h1>Waar</h1>
-              {/* <h2>Is De Korenmaat</h2> */}
-              {/* <p>Lalalalala Zeist, lalalala Postcodecheck {LOREM} {LOREM}</p> */}
-              <p>{LOREM}</p>
+              <p>U kunt uw boodschappen afhalen in onze winkel in Zeist. Maar wij bezorgen ook in de regio. Ook gekoelde producten kunnen wij bezorgen dankzij onze bestelbussen met ingebouwde koelcel. En indien u het wenst zetten wij uw boodschappen in de koelkast. Dat kan in overleg zelfs als u niet thuis bent! Doe hieronder de postcodecheck om te kijken of wij bij u bezorgen.</p>
               <div className="mainButtonContainer">
                 <CustomButton text="Doe De Postcodecheck" onClickCallback={this.updatePostcodeDisplay} />
               </div>
             </div>
           </div>
-          {/* <div className="mainContactInformation" id="contact">
-            <h1>Contact</h1>
-            <p>{LOREM}</p>
-          </div> */}
-          <MapsEmbed />
+          <MapsEmbed MAPS_API_KEY={API_Data.MAPS_API_KEY} MAPS_API_LOCATION={API_Data.MAPS_API_LOCATION} />
         </main>
       </React.Fragment>
     );

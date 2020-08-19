@@ -19,13 +19,34 @@
     grid-template-columns: 1fr;
   }
 
-  .navbarTitle, .navbarTitleRight, .navbarLogoRight {
+  /*<noLogo>*/
+
+  /*.navbarTitle, */.navbarTitleRight, .navbarLogoRight {
     display: none;
   }
 
   .navBarLogoLeft {
-    display: flex;
+    display: none;
   }
+
+  .navbarContent {
+    display: block;
+    width: 100%;
+  }
+
+  .navbarTitle {
+    margin-left: 0;
+    margin-right: 0;
+    text-align: center;
+    display: block;
+    width: 100%;
+  }
+
+  /* .navBarLogoLeft {
+    display: flex;
+  } */
+
+  /* </noLogo> */
 
   .Postcodecheck {
     left: 7.5%;
