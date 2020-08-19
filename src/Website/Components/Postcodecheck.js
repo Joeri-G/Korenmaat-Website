@@ -40,7 +40,6 @@ export default class Postcodecheck extends Component {
 
   checkNieuwePostcode = (e) => {
     let inputValue = e.target.value;
-    if (inputValue.length < 4) return null;
     if (!this.checkPostcodeFormat(inputValue)) {
       this.setState({
         hasFeedbackMessage: true,
@@ -114,8 +113,9 @@ export default class Postcodecheck extends Component {
     return (
       <React.Fragment>
         <div className={(this.state.openModal) ? "Postcodecheck ZoomInAnimation" : "Postcodecheck ZoomOutAnimation"}>
+          <a href="#close" className="close" onClick={(e) => {e.preventDefault();this.zoomOutAnimation();}}>&times;</a>
           <h1>Postcodecheck</h1>
-          <input placeholder="Uw Postcode (1234AB)" onChange={this.checkNieuwePostcode} className={postcodeStatus}/>
+          <input placeholder="Uw Postcode (1234)" onChange={this.checkNieuwePostcode} className={postcodeStatus}/>
           {(this.state.hasFeedbackMessage) ? this.state.feedbackMessage : null}
         </div>
         <div className="PostcodecheckBackground" onClick={this.zoomOutAnimation}/>
