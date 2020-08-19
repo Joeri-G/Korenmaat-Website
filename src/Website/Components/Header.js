@@ -7,7 +7,7 @@ export default class Header extends Component {
       <header className="header">
         <div className="headerCard toWebshop">
           <h1>De Korenmaat</h1>
-          <p>Lekker Biologisch.<br/>Lekker Eigenwijs!</p>
+          <p>Lekker Biologisch,<br/>Lekker Eigenwijs!</p>
           <CustomButton text="Meer Informatie" link="#info" />
           <CustomButton text="Naar De Webshop" link="https://dekorenmaat.nl/webshop" />
         </div>
