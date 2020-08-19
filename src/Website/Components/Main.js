@@ -27,21 +27,21 @@ export default class Main extends Component {
           <div className="mainColumns mainCol3 mainCol1Mobile">
             <div className="mainColumn">
               <h1>Wie</h1>
-              <p>De Korenmaat is een van de eerste biologische webwinkels van Nederland. Maar dan net even anders. De Korenmaat werd al in de jaren 70 opgericht door een groep mensen die vanuit het antroposofische gedachtengoed een ander soort biologische winkel wilden starten. Werken met oog voor mens en natuur. Voor een eerlijker economisch systeem, wordt een uniek betaalsysteem gebruikt.</p>
+              <p>De Korenmaat is een van de eerste biologische webwinkels van Nederland. Maar dan net even anders. De Korenmaat winkel werd al in de jaren 70 opgericht door een groep mensen die vanuit het antroposofische gedachtengoed een ander soort biologische winkel wilden starten. Werken met oog voor mens en natuur. Inmiddels uitgegroeid tot een volwaardige webwinkel maar met nog wel dezelfde idealen. De Korenmaat streeft bij haar werkzaamheden naar dienstbaarheid, overleg met de klanten en eerlijke prijzen. De Korenmaat wordt gerund door een team van enthousiaste vennoten.</p>
                 <div className="mainButtonContainer">
                   <CustomButton text="Bekijk De Video" link="https://youtu.be/jOlPtxCKVKo" />
                 </div>
             </div>
             <div className="mainColumn">
               <h1>Wat</h1>
-              <p>Wij verkopen biologische groente en fruit uit de buurt. Maar ook andere natuurlijke producten die je bij een biologische supermarkt vindt. Wij halen zoveel mogelijk producten van telers op minder dan 12 kilometer afstand. En als het uit de Noordoostpolder of de Betuwe komt, dan zorgen we ervoor dat we de boer kennen.</p>
+              <p>Wij verkopen biologische groente, fruit en zuivel uit de regio. Maar ook heel veel andere biologische producten. In onze webshop vindt u een breed assortiment met meer dan 10.000 producten. Voor een transparanter en eerlijker systeem, wordt een uniek betaalsysteem gebruikt. U ziet in de webshop de inkoopprijzen, gewoon de prijs die wij ook betalen voor de producten. Bovenop de inkoopprijs komt een vast bedrag per product voor het werk dat wij er aan hebben en voor de exploitatiekosten van de winkel. Wij hebben geen winstmaximalisatie als doel, maar een eerlijke prijs voor eerlijke producten.</p>
               <div className="mainButtonContainer">
                 <CustomButton text="Ons Assortiment" link="https://dekorenmaat.nl/webshop" />
               </div>
             </div>
             <div className="mainColumn">
               <h1>Waar</h1>
-              <p>U kunt uw boodschappen afhalen in onze winkel in Zeist. Maar wij bezorgen ook in de regio. Ook gekoelde producten kunnen wij bezorgen dankzij onze bestelbussen met ingebouwde koelcel. En indien u het wenst zetten wij uw boodschappen in de koelkast. Dat kan in overleg zelfs als u niet thuis bent! Doe hieronder de postcodecheck om te kijken of wij bij u bezorgen.</p>
+              <p>U kunt uw boodschappen afhalen in onze winkel in Zeist. Op dinsdag, vrijdag en zaterdag bezorgen wij ook in de regio. Ook gekoelde producten kunnen wij bezorgen dankzij onze nieuwe bestelbussen met ingebouwde koelcel. En indien gewenst zetten wij de boodschappen bij u in de koelkast. Dat kan (in overleg) zelfs als u niet thuis bent! Doe hieronder de postcodecheck om te kijken of wij bij u bezorgen.</p>
               <div className="mainButtonContainer">
                 <CustomButton text="Doe De Postcodecheck" onClickCallback={this.updatePostcodeDisplay} />
               </div>
