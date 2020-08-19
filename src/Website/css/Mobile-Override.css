@@ -48,9 +48,13 @@
 
   /* </noLogo> */
 
+  .mainColumn {
+    font-size: 1.4rem;
+  }
+
   .Postcodecheck {
-    left: 7.5%;
+    left: 5%;
     margin: 20% auto;
-    width: 85%;
+    width: 90%;
   }
 }
