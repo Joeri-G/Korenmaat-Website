@@ -20,7 +20,7 @@ export default class MapsEmbed extends Component {
   UserHasDNT = () =>
     <div className="mainGoogleMapsEmbed doNotTrackMessage">
       <p>Deze website maakt gebruik van externe services maar omdat uw browser een Do Not Track signaal verstuurd hebben wij deze tijdelijk uitgezet.</p>
-      <p>U kan deze externe services hier onder weer inschakelen</p>
+      <p>U kan deze externe services hier onder weer inschakelen.</p>
       <p><CustomButton text="Inschakelen" onClickCallback={() => {
         this.setState({showGoogleMapsEmbed: true});
         createCookie('showRegardlessOfDNT', '1', 365);
