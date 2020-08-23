@@ -29,7 +29,7 @@
 }
 
 .mainColumn h1, .mainColumn h2 {
-  text-align: center;
+  text-align: left;
   font-size: 3rem;
   margin: 0;
   font-weight: normal;
@@ -42,24 +42,20 @@
 .mainColumn::after {
   display: block;
   content: '';
-  height: 3rem;
+  height: 4rem;
 }
 
 .mainButtonContainer {
   padding-bottom: 1rem;
-  margin-left: -1rem;
   position: absolute;
   bottom: 0;
   display: flex;
   align-items: stretch;
   justify-content: center;
   width: 100%;
-}
-
-.mainButtonContainer {
   width: calc(100% - 2rem);
   display: block;
-  margin: 0 auto;
+  margin: 0 -1rem 0 0;
 }
 
 .main .button {
