@@ -9,7 +9,7 @@ export default class Header extends Component {
           <h1>De Korenmaat</h1>
           <p>Lekker Biologisch,<br/>Lekker Eigenwijs!</p>
           <CustomButton text="Meer Informatie" link="#info" />
-          <CustomButton text="Naar De Webshop" link="./webshop" />
+          <CustomButton text="Naar De Webshop" link="./index.php" />
         </div>
       </header>
     );

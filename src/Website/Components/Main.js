@@ -37,7 +37,7 @@ export default class Main extends Component {
               <p>Wij verkopen biologische groente, fruit en zuivel uit de regio. Maar ook heel veel andere biologische producten. In onze webshop vindt u een breed assortiment met meer dan 10.000 producten.
 Om zo transparant en eerlijk mogelijk te werken, wordt een uniek prijssysteem gebruikt. U ziet in de webshop de inkoopprijzen, gewoon de prijs die wij ook betalen voor de producten. Bovenop de inkoopprijs komt een vast bedrag per product voor het werk dat wij er aan hebben en voor de exploitatiekosten van de winkel. Wij streven niet naar winstmaximalisatie, maar willen een eerlijke prijs voor eerlijke producten.</p>
               <div className="mainButtonContainer">
-                <CustomButton text="Ons Assortiment" link="./webshop" />
+                <CustomButton text="Ons Assortiment" link="./index.php" />
               </div>
             </div>
             <div className="mainColumn">
