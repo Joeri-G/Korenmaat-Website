@@ -58,7 +58,6 @@ export default class Postcodecheck extends Component {
           feedbackMessage:  <React.Fragment>
                               <p className="geldigePostcode">U woont binnen ons bezorggebied!</p>
                               <p>U kunt zich <a href="./create_account.php">hier</a> opgeven.</p>
-                              <!-- Op het moment staate deze pagina alleen op /informatie.html en hierom zal deze link dus niet werken in de testomgeving -->
                               <p>Kijk <a href="../informatie.html" onClick={(e) => {
                                 e.preventDefault();
                                 if (!window.open(e.target.href,'','resizable=no,location=no,menubar=no,scrollbars=yes,status=no,toolbar=no,fullscreen=no,dependent=no,width=750,height=750,left=750,top=250,status')) window.location.href = e.target.href;
