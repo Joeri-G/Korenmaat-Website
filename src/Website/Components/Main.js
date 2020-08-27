@@ -47,7 +47,7 @@ export default class Main extends Component {
               </div>
             </div>
           </div>
-          <MapsEmbed MAPS_API_KEY={API_Data.MAPS_API_KEY} MAPS_API_LOCATION={API_Data.MAPS_API_LOCATION} />
+          <MapsEmbed MAPS_API_KEY={API_Data.MAPS_API_KEY} MAPS_API_LOCATION={API_Data.MAPS_API_LOCATION} showDNT={false} />
         </main>
       </React.Fragment>
     );
