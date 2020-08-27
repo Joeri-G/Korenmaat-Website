@@ -57,11 +57,8 @@ export default class Postcodecheck extends Component {
           hasFeedbackMessage: true,
           feedbackMessage:  <React.Fragment>
                               <p className="geldigePostcode">U woont binnen ons bezorggebied!</p>
-                              <p>U kunt zich <a href="./create_account.php">hier</a> opgeven.</p>
-                              <p>Kijk <a href="../informatie.html" onClick={(e) => {
-                                e.preventDefault();
-                                if (!window.open(e.target.href,'','resizable=no,location=no,menubar=no,scrollbars=yes,status=no,toolbar=no,fullscreen=no,dependent=no,width=750,height=750,left=750,top=250,status')) window.location.href = e.target.href;
-                              }}>hier</a> voor de bezorgtijden voor uw gebied</p>
+                              <p>U kunt zich <a href="./create_account.php" target="_blank">hier</a> opgeven.</p>
+                              <p>Kijk <a href="./contact.php" target="_blank">hier</a> voor de bezorgtijden voor uw gebied.</p>
                             </React.Fragment>,
           success: true
         });
