@@ -13,9 +13,10 @@ export default class MapsEmbed extends Component {
 
   componentDidMount() {
     // check the browsers DNT
-    if (
-      (typeof navigator.doNotTrack === 'undefined' || navigator.doNotTrack !== "1") ||
-      (navigator.doNotTrack === "1" && accessCookie("showRegardlessOfDNT") === "1")
+    if (this.props.showDNT && (
+        (typeof navigator.doNotTrack === 'undefined' || navigator.doNotTrack !== "1") ||
+        (navigator.doNotTrack === "1" && accessCookie("showRegardlessOfDNT") === "1")
+      )
     ) this.setState({showGoogleMapsEmbed: true});
   }
 
