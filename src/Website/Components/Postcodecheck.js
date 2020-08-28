@@ -34,8 +34,19 @@ export default class Postcodecheck extends Component {
 
   ANIMATION_DURATION = 150;
 
+  closeOnEscape = (e) => {
+    if (e.key && e.key === "Escape") this.zoomOutAnimation();
+  };
+
   componentDidMount() {
     setTimeout(() => this.setState({finishedAnimation: true}), this.ANIMATION_DURATION);
+    // close on escape
+    window.document.addEventListener("keydown", this.closeOnEscape);
+  }
+
+  componentWillUnmount() {
+    // remove event listener on unmount
+    window.document.removeEventListener("keydown", this.closeOnEscape);
   }
 
   checkNieuwePostcode = (e) => {
