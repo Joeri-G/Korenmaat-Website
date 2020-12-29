@@ -79,9 +79,8 @@ export default class Postcodecheck extends Component {
     this.setState({
       hasFeedbackMessage: true,
       feedbackMessage:  <React.Fragment>
-                          <p>Wij bezorgen (nog) niet in uw postcodegebied. </p>
-                          <p>U kunt uw bestelling in de winkel komen ophalen tijdens onze openingstijden of een e-mailbericht sturen om ons op de hoogte te brengen van uw interesse, zodat wij u kunnen berichten bij uitbreiding van het bezorggebied.</p>
-                          <p>Bent u een nieuwe klant en wilt u uw bestelling komen ophalen? Dan is het nodig dat u eerst telefonisch of per e-mail met ons contact opneemt. Pas daarna kunnen wij uw bestelling verwerken.</p>
+                          <p>Wij bezorgen (nog) niet in uw postcodegebied. Maar u kunt uw bestelling wel in de winkel afhalen tijdens onze openingstijden.</p>
+                          <p>Of stuur een e-mailbericht om ons op de hoogte te brengen van uw interesse zodat wij u kunnen berichten bij uitbreiding van het bezorggebied.</p>
                         </React.Fragment>,
       success: false
     });

@@ -8,8 +8,8 @@ export default class Header extends Component {
         <div className="headerCard toWebshop">
           <h1>De Korenmaat</h1>
           <p>Lekker Biologisch,<br/>Lekker Eigenwijs!</p>
-          <CustomButton text="Meer Informatie" link="#info" />
-          <CustomButton text="Naar De Webshop" link="./index.php" />
+          <CustomButton text="Meer informatie" link="#info" />
+          <CustomButton text="Naar de webshop" link="./index.php" />
         </div>
       </header>
     );
