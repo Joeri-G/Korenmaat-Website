@@ -17,7 +17,7 @@ Om eventuele aanpassingen te zien en te testen kan de ingebouwde test server geb
 
 Om de aanpassingen op een server te deployen moet de bron opnieuw gebuilt worden en geupload. Hiervoor gebruiken we `npm` in combinatie met het `build` script.
 
-    npm run build
+    $ npm run build
 
 Dit maakt een nieuwe map genaamd `build` met alle benodigde bestanden. Als er naar een bestaande server gedeployed wordt kan het zijn dat sommige van de gegenereerde bestanden aan aanwezig zijn op de server. In dit geval moet er per bestand besloten worden welke versie op de server komt.
 Een voorbeeld van deze dubbele bestanden zou `robots.txt` kunnen zijn. Dit bestand bevat instructies voor zoekmachines en webcrawlers. Het bestaande bestand is in dit geval waarschijnlijk uitgebreider.
